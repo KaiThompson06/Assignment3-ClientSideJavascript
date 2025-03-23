@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - Client Side Javascript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to PIZZA</h1>
+        <p id="studentId">Click For ID!</p>
+    </header>   
+    <main>
+        <form action="">
+            <fieldset id="base">
+                <legend>Pizza Base</legend>
+
+                <div>
+                    <!-- selection menu for sauce type -->
+                    <label for="sauceType">Sauce Type</label>
+                    <select name="sauceType" id="sauceType">
+                        <option value="tomato">Tomato Sauce</option>
+                        <option value="bbq">BBQ Sauce</option>
+                    </select>
+                </div>
+
+                <label for="pizzaSize">Pizza Size</label>
+                <select name="pizzaSize" id="pizzaSize">
+                    <option value="small">Small(10")</option>
+                    <option value="medium">Medium(12")</option>
+                    <option value="large">Large(14")</option>
+                </select>
+
+                <!-- what pizza shape -->
+                <!-- another selection input -->
+                <label for="pizzaShape">Pizza Shape</label>
+                <select name="pizzaShape" id="pizzaShape">
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                </select>
+
+
+
+            </fieldset>
+            <fieldset id="toppings">
+                <legend>Toppings</legend>
+                <input type="checkbox" class="toppings" id="topping_pepperoni" value="pepperoni" checked>
+                <label for="topping_pepperoni">Pepperoni</label>
+                
+                <input type="checkbox" class="toppings" id="topping_mushrooms" value="mushrooms">
+                <label for="topping_mushrooms">Mushrooms</label>
+                
+                <input type="checkbox" class="toppings" id="topping_black_olives" value="olives">
+                <label for="topping_black_olives">Black Olives</label>
+                
+                <input type="checkbox" class="toppings" id="topping_pineapple" value="pineapple">
+                <label for="topping_pineapple">Pineapple</label>
+                
+                <input type="checkbox" class="toppings" id="topping_basil" value="basil">
+                <label for="topping_basil">Basil</label>
+                
+
+
+
+            </fieldset>
+            
+
+            <!-- buttons to reset or submit the selections -->
+            <button id="order">Order</button> 
+
+
+        </form>
+
+        <div id="results">
+            <h2>Order Summary</h2>
+            <p id="orderSummary">
+                
+            </p>
+            <div id="pizzaImage">
+
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
