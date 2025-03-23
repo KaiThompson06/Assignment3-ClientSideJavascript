@@ -25,47 +25,59 @@
                         <option value="bbq">BBQ Sauce</option>
                     </select>
                 </div>
-
-                <label for="pizzaSize">Pizza Size</label>
-                <select name="pizzaSize" id="pizzaSize">
-                    <option value="small">Small(10")</option>
-                    <option value="medium">Medium(12")</option>
-                    <option value="large">Large(14")</option>
-                </select>
-
+                
+                <div>
+                    <label for="pizzaSize">Pizza Size</label>
+                    <select name="pizzaSize" id="pizzaSize">
+                        <option value="small">Small(10")</option>
+                        <option value="medium">Medium(12")</option>
+                        <option value="large">Large(14")</option>
+                    </select>
+                </div>
                 <!-- what pizza shape -->
                 <!-- another selection input -->
-                <label for="pizzaShape">Pizza Shape</label>
-                <select name="pizzaShape" id="pizzaShape">
-                    <option value="circle">Circle</option>
-                    <option value="square">Square</option>
-                </select>
+                <div>
+                    <label for="pizzaShape">Pizza Shape</label>
+                    <select name="pizzaShape" id="pizzaShape">
+                        <option value="circle">Circle</option>
+                        <option value="square">Square</option>
+                    </select>
+                </div>
 
+                <div>
+                    <label for="SauceAmount">Sauce Amount</label>
+                    <input type="range" id="sauceAmount" name="sauceAmount" min="1" max="10" value="5">
+                    <p id="sauceAmountDisplay">Normal (5)</p>
+                </div>
 
+                <div>
+                    <label for="cheeseAmount">Cheese Amount</label>
+                    <input type="range" id="cheeseAmount" name="cheeseAmount" min="1" max="10" value="5">
+                    <p id="cheeseAmountDisplay">Normal (5)</p>
+                </div>
 
-            </fieldset>
-            <fieldset id="toppings">
-                <legend>Toppings</legend>
-                <input type="checkbox" class="toppings" id="topping_pepperoni" value="pepperoni" checked>
-                <label for="topping_pepperoni">Pepperoni</label>
-                
-                <input type="checkbox" class="toppings" id="topping_mushrooms" value="mushrooms">
-                <label for="topping_mushrooms">Mushrooms</label>
-                
-                <input type="checkbox" class="toppings" id="topping_black_olives" value="olives">
-                <label for="topping_black_olives">Black Olives</label>
-                
-                <input type="checkbox" class="toppings" id="topping_pineapple" value="pineapple">
-                <label for="topping_pineapple">Pineapple</label>
-                
-                <input type="checkbox" class="toppings" id="topping_basil" value="basil">
-                <label for="topping_basil">Basil</label>
-                
-
-
-
-            </fieldset>
             
+            </fieldset>
+            <div>
+                <fieldset id="toppings">
+                    <legend>Toppings</legend>
+                    <input type="checkbox" class="toppings" id="topping_pepperoni" value="pepperoni" checked>
+                    <label for="topping_pepperoni">Pepperoni</label>
+                    
+                    <input type="checkbox" class="toppings" id="topping_mushrooms" value="mushrooms">
+                    <label for="topping_mushrooms">Mushrooms</label>
+                    
+                    <input type="checkbox" class="toppings" id="topping_black_olives" value="olives">
+                    <label for="topping_black_olives">Black Olives</label>
+                    
+                    <input type="checkbox" class="toppings" id="topping_pineapple" value="pineapple">
+                    <label for="topping_pineapple">Pineapple</label>
+                    
+                    <input type="checkbox" class="toppings" id="topping_basil" value="basil">
+                    <label for="topping_basil">Basil</label>
+                    
+                </fieldset>
+            </div>
 
             <!-- buttons to reset or submit the selections -->
             <button id="order">Order</button> 
