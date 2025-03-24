@@ -57,6 +57,7 @@ form div input[type="checkbox"]
     /* shift up a bit */
     margin-top: -75px;
     text-align: center;
+    font-size: 20px;
 }
 
 /* some fancifying of the order button */
