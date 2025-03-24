@@ -1,21 +1,24 @@
+
+/* simple style for student ID */
 #studentId {
     color: #000;
     font-size: 20px;
     font-weight: bold;
+    /* prompt to click */
     cursor: pointer;
 }
-
+/* simple hover */
 #studentId:hover {
-    color: #000;
     text-decoration: underline;
 }
 
+/* make the 2 direct children of the page (form and div for output) display next to each other */
 main {
     display: flex;
     flex-direction: row;
 }
 
-
+/* make the question divs columns with some simple styling */
 form div {
     display: flex;
     flex-direction: column;
@@ -23,19 +26,19 @@ form div {
     padding: 10px;   
     box-shadow: 0 0 10px #c5c5c5;
 }
-
+/* make labels slightly bigger and some margin */
 form div label {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+/* make the select menus bigger */
 form div select {
     height: 30px;
     font-size: 16px;
     padding: 5px;
 }
-
+/* make the checkboxes bigger and have some margin */
 form div input[type="checkbox"] 
 {
     margin-right: 10px;
@@ -45,52 +48,71 @@ form div input[type="checkbox"]
     cursor: pointer;
 }
 
+/* make the text summary and image display in a column */
 #results {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-left: 20px;
+    /* shift up a bit */
     margin-top: -75px;
     text-align: center;
 }
 
+/* some fancifying of the order button */
 #order {
+    /* make it take up some space */
     width: 50%;
     margin-left: 25%;
     padding: 10px;
     box-shadow: 0 0 10px #c5c5c5;
     text-align: center;
+    /* rounded corners */
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
-    transition: all .1s ease-in-out;
+    /* transition for the hover effect */
+    transition: all .3s;
 }
-
+/* hover change bg color and bold text */
 #order:hover {
     background-color: #d3ff6c;
     font-weight: 600;
 
 }
 
+/* styling for the generated pizza */
 
+/* pizza crust class */
 .crust {
+    /* set a basic crust color */
     background-color: #D2691E;
+    /* make circle */
     border-radius: 50%;
+    /* set as a default 200px box*/
     height: 200px;
     width: 200px;
+    /* center it */
     margin: auto;
 }
 
+/* sauce class */
 .sauce {
+    /* set a basic sauce color */
     background-color: #FF6347; 
+    /* make circle */
     border-radius: 50%;
+    /* make the size 90% of the crust size, so it shows the crust under */
     height: 90%;
     width: 90%;
+    /* position relative and top/left are used to center it */
     position: relative;
     top: 5%;
     left: 5%;
 }
 
+/* cheese class */
+/* very similar to sauce with a different color */
 .cheese {
     background-color: #FFD700;
     border-radius: 50%;
@@ -101,11 +123,16 @@ form div input[type="checkbox"]
     left: 5%;
 }
 
+/* topping class */
 .topping {
+    /* set a basic topping size */
     height: 15%;
     width: 15%;
+    /* remove from flox of content (so it can overlap with other toppings) */
     position: absolute;
+    /* set a basic image */
     background-image: url('images/pepperoni.png');
+    /* set the image to cover the div, and centered */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

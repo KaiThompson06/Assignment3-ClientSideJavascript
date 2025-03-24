@@ -8,18 +8,22 @@
     <script src="js/scripts.js" defer></script>
 </head>
 <body>
+    <!-- simple header to hold welcome and interactive ID  -->
     <header>
         <h1>Welcome to PIZZA</h1>
         <p id="studentId">Click For ID!</p>
     </header>   
     <main>
+        <!-- form to hold all the pizza options --> 
         <form>
+            <!-- use field sets for easy styling -->
             <fieldset id="base">
                 <legend>Pizza Base</legend>
-
+                <!-- hold each question in divs for seperation -->
                 <div>
                     <!-- selection menu for sauce type -->
                     <label for="sauceType">Sauce Type</label>
+                    <!-- use a select menu to ensure the right input is given -->
                     <select name="sauceType" id="sauceType">
                         <option value="tomato">Tomato Sauce</option>
                         <option value="bbq">BBQ Sauce</option>
@@ -27,6 +31,7 @@
                 </div>
                 
                 <div>
+                    <!-- selection menu for Pizza size -->
                     <label for="pizzaSize">Pizza Size</label>
                     <select name="pizzaSize" id="pizzaSize">
                         <option value="small">Small(10")</option>
@@ -34,23 +39,24 @@
                         <option value="large">Large(14")</option>
                     </select>
                 </div>
-                <!-- what pizza shape -->
-                <!-- another selection input -->
                 <div>
+                    <!-- selection menu for pizza shape -->
                     <label for="pizzaShape">Pizza Shape</label>
                     <select name="pizzaShape" id="pizzaShape">
                         <option value="circle">Circle</option>
                         <option value="square">Square</option>
                     </select>
                 </div>
-
+                
                 <div>
+                    <!-- slider for sauce amount -->
                     <label for="SauceAmount">Sauce Amount</label>
                     <input type="range" id="sauceAmount" name="sauceAmount" min="1" max="10" value="5">
                     <p id="sauceAmountDisplay">Normal (5)</p>
                 </div>
 
                 <div>
+                    <!-- slider for cheese amount -->
                     <label for="cheeseAmount">Cheese Amount</label>
                     <input type="range" id="cheeseAmount" name="cheeseAmount" min="1" max="10" value="5">
                     <p id="cheeseAmountDisplay">Normal (5)</p>
@@ -58,9 +64,12 @@
 
             
             </fieldset>
+            <!-- div for easy selecting in CSS -->
             <div>
+                <!-- fieldset for toppings -->
                 <fieldset id="toppings">
-                    <legend>Toppings</legend>
+                    <legend>Toppings (select up to 3)</legend>
+                    <!-- checkboxes for each topping, a shared class to enable a select up to 3 in js -->
                     <input type="checkbox" class="toppings" id="topping_pepperoni" value="pepperoni" checked>
                     <label for="topping_pepperoni">Pepperoni</label>
                     
@@ -79,17 +88,20 @@
                 </fieldset>
             </div>
 
-            <!-- buttons to reset or submit the selections -->
+            <!-- button to order the pizza -->
             <button id="order">Order</button> 
 
 
         </form>
 
+        <!-- a div to hold generated image and order summary -->
         <div id="results">
             <h2>Order Summary</h2>
+            <!-- p for text summary -->
             <p id="orderSummary">
                 
             </p>
+            <!-- div for image -->
             <div id="pizzaImage">
 
             </div>
